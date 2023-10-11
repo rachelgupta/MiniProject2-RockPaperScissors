@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPS2</title>
+        <!--<style src="RSP2.css"></style> -->
+        <link rel="stylesheet" href="RSP2.css">
+    </head>
+    <body>
+        <p class="title">Rock Paper Scissors</p>
+        <button onclick="check(0)" class="move-button"><img src="images\Rock.png" class="imageStyle"></button>
+        <button onclick="check(1)" class="move-button"><img src="images\Paper.png" class="imageStyle"></button>
+        <button onclick="check(2)" class="move-button"><img src="images\Scissors.png" class="imageStyle"></button>
+
+        <p class="js-result style-result"></p>
+        <p class="js-show"></p>
+        <p class="js-scores style-score"></p>
+        <button onclick="
+        scores.win = 0;
+        scores.lose = 0;
+        scores.tie = 0;
+        document.querySelector('.js-result').innerHTML = '';
+        document.querySelector('.js-show').innerHTML = '';
+        updateScore();
+        " class="reset-but">Reset</button>
+    </body>
+    <script src="RPS2.js"></script>
+</html>
